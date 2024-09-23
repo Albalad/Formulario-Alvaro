@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+        <title>Formulario</title>
+      </head>
+    <body>
+        <div class="position-absolute top-50 start-50 translate-middle">
+            <div class="card w-100 h-100">
+
+                <!-- Cabecera -->
+                <div class="card-header">
+                    <h3>Payment form example</h3>
+                </div>
+
+                <!-- Cuerpo -->
+                <div class="card-body">
+                    <div class="alert alert-danger" role="alert">
+                        Some fields are missing
+                    </div>
+
+                    <!-- Formulario -->
+
+                    <form class="row g-3 needs-validation" novalidate>
+
+                        <!-- Input1 -->
+                        <div class="col-md-5">
+                          <label for="validationCustom01" class="form-label"><strong>Card #</strong></label>
+                          <input type="text" class="form-control" id="validationCustom01" value="XXXXXXXXXXXXXXXXX" required>
+                          <div class="valid-feedback">
+                          </div>
+                        </div>
+
+                        <!-- Input2 -->
+                        <div class="col-md-3">
+                          <label for="validationCustom02" class="form-label"><strong>CVC #</strong></label>
+                          <input type="number" class="form-control" id="validationCustom02" value="0000" required>
+                          <div class="valid-feedback">
+                          </div>
+                        </div>
+
+                        <!-- Input3 -->
+                        <div class="col-md-4">
+                          <label for="validationCustomUsername" class="form-label"><strong>Amount</strong></label>
+                          <div class="input-group has-validation">
+                            <span class="input-group-text" id="inputGroupPrepend"><strong>$</strong></span>
+                            <input type="text" class="form-control" value="Amount" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                            <div class="invalid-feedback">
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Input4 -->
+                        <div class="col-md-6">
+                          <label for="validationCustom03" class="form-label"><strong>First Name</strong></label>
+                          <input type="text" class="form-control" id="validationCustom03" required>
+                          <div class="invalid-feedback">
+                          </div>
+                        </div>
+
+                        <!-- Input5 -->
+                        <div class="col-md-6">
+                          <label for="validationCustom04" class="form-label"><strong>Last Name</strong></label>
+                          <input type="text" class="form-control" id="validationCustom04" required>
+                          <div class="invalid-feedback">
+                          </div>
+                        </div>
+
+                        <!-- Input6 -->
+                        <div class="col-md-6">
+                          <label for="validationCustom05" class="form-label"><strong>City</strong></label>
+                          <input type="text" class="form-control" id="validationCustom05" required>
+                          <div class="invalid-feedback">
+                          </div>
+                        </div>
+
+                        <!-- Input7 -->
+                        <div class="col-md-3">
+                            <label for="validationCustom06" class="form-label"><strong>State</strong></label>
+                            <select class="form-select" id="validationCustom06" required>
+                                <option selected disabled value=""><strong>Pick a state</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <div class="invalid-feedback">
+                            </div>
+                        </div>
+
+                        <!-- Input8 -->
+                        <div class="col-md-3">
+                            <label for="validationCustom07" class="form-label"><strong>Postal Code</strong></label>
+                            <input type="text" class="form-control" id="validationCustom07" required>
+                            <div class="invalid-feedback">
+                            </div>
+                        </div>
+
+                        <!-- Input9 -->
+                        <div class="col-md-4">
+                            <label for="validationCustom08" class="form-label"><strong>We accept:</strong></label>
+                            <div class="text-bg-secondary rounded d-flex justify-content-evenly p-2">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input mt-1" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1"><i class="fab fa-cc-mastercard  "></i></label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input mt-1" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2"><i class="fab fa-cc-visa  "></i></label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input mt-1" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                    <label class="form-check-label" for="inlineRadio3"><i class="fab fa-cc-diners-club  "></i></label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input mt-1" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2"><i class="fab fa-cc-amex"></i></label>
+                                </div>
+                            </div>
+                            <div class="invalid-feedback">
+                            </div>
+                        </div>
+
+                        <div class="col-2"></div>
+                        
+                        <!-- Input10 -->
+                        <div class="col-md-6">
+                            <label for="validationCustom09" class="form-label"><strong>Message</strong></label>
+                            <textarea class="form-control" id="validationCustom09" required></textarea>
+                            <p class="fs-8">Add any notes here.</p>
+                            <div class="invalid-feedback">
+                            </div>
+                        </div>
+
+
+                        
+                      </form>
+                </div>
+
+                <!-- Envio de formulario -->
+                <div class="card-footer text-body-secondary">
+                    <div class="col-12 d-flex flex-row-reverse">
+                        <div class="px-1">
+                            <button class="btn btn-primary" type="submit">Send</button>
+                        </div>
+                        <div>
+                            <button class="btn btn-secondary" type="submit">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+            integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+            crossorigin="anonymous">
+        </script>
+        
+    </body>
+</html>
